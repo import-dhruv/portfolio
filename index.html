@@ -1,94 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dhruv Builds</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dhruv Builds</title>
 
-  <!-- Make sure style.css is in the same folder as this file -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Make sure style.css is in the same folder as this file -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Google font (optional) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="horizontal-line" aria-hidden="true"></div>
-  <div class="vertical-line" aria-hidden="true"></div>
+    <!-- Google font (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="horizontal-line" aria-hidden="true"></div>
+    <div class="vertical-line" aria-hidden="true"></div>
 
-  <div class="container">
-    <header class="intro">
-      <div class="intro-main">
-        <h1>Hola! Dhruv's Here!</h1>
-        <h2>21 Year Old Full Stack Dev.</h2>
-        <p class="tagline">I love building useful tools.</p>
+    <div class="container">
+      <header class="intro">
+        <div class="intro-main">
+          <h1>Hola! Dhruv's Here!</h1>
+          <h2>21 Year Old Full Stack Dev.</h2>
+          <p class="tagline">I love building useful tools.</p>
+        </div>
+      </header>
+
+      <div class="logo" aria-hidden="true">
+        <img
+          src="https://i.pinimg.com/736x/ef/ab/4b/efab4b84f102982fdf97f7eb634b34b5.jpg"
+          alt="Dhruv avatar"
+          id="logopic"
+        />
       </div>
-    </header>
 
-    <div class="logo" aria-hidden="true">
-      <img src="https://i.pinimg.com/736x/ef/ab/4b/efab4b84f102982fdf97f7eb634b34b5.jpg" alt="Dhruv avatar" id="logopic">
+      <section class="skills" id="skills">
+        <h2 class="section-title">Skills:</h2>
+        <p class="skill-list">
+          <strong>AI Engineering:</strong> LLMs (GPT-4, Claude, Gemini, Llama),
+          LangChain, OpenAI API, Groq, RAG, Vector Databases (Pinecone, Chroma),
+          Prompt Engineering, AI Agents, Fine-tuning<br /><br />
+          <strong>Full Stack Development:</strong> HTML, CSS, Javascript,
+          ReactJS, NodeJS, ExpressJS, MongoDB, Python, C++, Github, TailwindCSS
+        </p>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid" aria-label="Projects list">
+          <a
+            class="project-link"
+            href="https://github.com/import-dhruv/DataGuy"
+            data-name="DataGuy"
+            >DataGuy</a
+          >
+          <a
+            class="project-link"
+            href="https://github.com/import-dhruv/todo-agent"
+            data-name="Todo-Agent"
+            >Todo Agent</a
+          >
+          <a
+            class="project-link"
+            href="https://github.com/import-dhruv/flux-ai"
+            data-name="Flux-AI"
+            >Flux AI</a
+          >
+        </div>
+      </section>
+
+      <footer class="links">
+        <h2 class="section-title">Say Hello to Me :</h2>
+        <ul class="contact-list">
+          <li>
+            <a href="https://x.com/importdhruv" target="_blank" rel="noopener"
+              >X</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dhruv-patel-2562bb369/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/import-dhruv"
+              target="_blank"
+              rel="noopener"
+              >Github</a
+            >
+          </li>
+          <li><a href="mailto:dhruvvcodess@gmail.com">Email</a></li>
+          <li>
+            <a href="https://youtube.com/@batchnorm42?si=Qp6qQ90JkK8QPB_l"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1zX9IfLCrtV5CmP1UO0N6JZv58cshXc5o/view?usp=sharing"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
 
-    <section class="skills" id="skills">
-      <h2 class="section-title">Skills:</h2>
-      <p class="skill-list">HTML, CSS, Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Python, C++, Github, TailwindCSS</p>
-    </section>
+    <!-- Scroll JS: show/hide horizontal line and nail scroll behavior -->
+    <script>
+      (function () {
+        const horiz = document.querySelector(".horizontal-line");
+        if (!horiz) return;
 
-    <section class="projects" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid" aria-label="Projects list">
-        <a class="project-link" href="https://github.com/import-dhruv/valyux-mvp-main" data-name="Valyux-MVP">Valyux</a>
-        <a class="project-link" href="https://github.com/import-dhruv/luma" data-name="Luma">Luma</a>
-        <a class="project-link" href="https://musical-hub.vercel.app/" data-name="Musical-hub">Musical Hub</a>
-      </div>
-    </section>
-  
+        let lastY = window.scrollY;
+        let ticking = false;
+        // small debounce/threshold so it doesn't flicker
+        const THRESH = 8;
 
-    <footer class="links">
-      <h2 class="section-title">Say Hello to Me :</h2>
-      <ul class="contact-list">
-        <li><a href="https://x.com/importdhruv" target="_blank" rel="noopener">X</a></li>
-        <li><a href="https://www.linkedin.com/in/dhruv-patel-2562bb369/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://github.com/import-dhruv" target="_blank" rel="noopener">Github</a></li>
-        <li><a href="mailto:dhruvvcodess@gmail.com">Email</a></li>
-        <li><a href="https://youtube.com/@batchnorm42?si=Qp6qQ90JkK8QPB_l">Youtube</a></li>
-        <li><a href="https://drive.google.com/file/d/1atYnuqFEM10lD6zMLnMAYlrIqSwdym3M/view?usp=drive_link">Resume</a></li>
-      </ul>
-    </footer>
-  </div>
-
-  <!-- Scroll JS: show/hide horizontal line and nail scroll behavior -->
-  <script>
-    (function () {
-      const horiz = document.querySelector('.horizontal-line');
-      if (!horiz) return;
-
-      let lastY = window.scrollY;
-      let ticking = false;
-      // small debounce/threshold so it doesn't flicker
-      const THRESH = 8;
-
-      window.addEventListener('scroll', () => {
-        if (!ticking) {
-          window.requestAnimationFrame(() => {
-            const currentY = window.scrollY;
-            if (currentY - lastY > THRESH) {
-              horiz.classList.add('hide'); // scrolling down => hide
-            } else if (lastY - currentY > THRESH || currentY <= 10) {
-              horiz.classList.remove('hide'); // scrolling up => show
+        window.addEventListener(
+          "scroll",
+          () => {
+            if (!ticking) {
+              window.requestAnimationFrame(() => {
+                const currentY = window.scrollY;
+                if (currentY - lastY > THRESH) {
+                  horiz.classList.add("hide"); // scrolling down => hide
+                } else if (lastY - currentY > THRESH || currentY <= 10) {
+                  horiz.classList.remove("hide"); // scrolling up => show
+                }
+                lastY = currentY;
+                ticking = false;
+              });
+              ticking = true;
             }
-            lastY = currentY;
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }, { passive: true });
+          },
+          { passive: true }
+        );
 
-      // optional: hide horizontal line while dragging or fast scroll on mobile
-      document.addEventListener('touchstart', () => horiz.classList.add('hide'), {passive:true});
-      document.addEventListener('touchend', () => horiz.classList.remove('hide'), {passive:true});
-    })();
-  </script>
-</body>
+        // optional: hide horizontal line while dragging or fast scroll on mobile
+        document.addEventListener(
+          "touchstart",
+          () => horiz.classList.add("hide"),
+          { passive: true }
+        );
+        document.addEventListener(
+          "touchend",
+          () => horiz.classList.remove("hide"),
+          { passive: true }
+        );
+      })();
+    </script>
+  </body>
 </html>
